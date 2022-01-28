@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pull_to_refresh_header_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/good_night_img"
+    tools:ignore="MissingPrefix">
+
+    <androidx.core.widget.NestedScrollView
+
+        android:id="@+id/mNestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:bl_gradient_angle="270"
+        app:bl_gradient_centerColor="@color/grey"
+        app:bl_gradient_endColor="@color/textBlack"
+        app:bl_gradient_startColor="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/search_world"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="26dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="搜索大程序"
+                android:textSize="14sp"
+                app:bl_corners_radius="8dp"
+                app:bl_shape="rectangle"
+                app:bl_solid_color="@color/colorPrimary" />
+
+            <LinearLayout
+
+                android:id="@+id/canSeeLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="30dp"
+                    android:text="最近使用"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.yanzhenjie.recyclerview.SwipeRecyclerView
+                    android:id="@+id/list1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="16dp"
+                    android:text="我的大程序"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.yanzhenjie.recyclerview.SwipeRecyclerView
+                    android:id="@+id/list2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/upIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="90dp"
+                    android:src="@drawable/up"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.quyuanjin.imseven.ui.view.wedgit.pullextend.ExpendPoint
+        android:id="@+id/expend_point"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_alignParentBottom="true"
+        android:padding="1dp" />
+</RelativeLayout>

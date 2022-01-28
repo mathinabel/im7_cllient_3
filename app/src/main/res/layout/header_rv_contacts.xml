@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:id="@+id/llNewFriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_common_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/item_margin_top_and_bottom"
+        android:paddingLeft="@dimen/item_margin_left_and_right"
+        android:paddingRight="@dimen/item_margin_left_and_right"
+        android:paddingTop="@dimen/item_margin_top_and_bottom"
+      >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ivNewFriend"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:layout_marginRight="5dp"
+                fresco:failureImageScaleType="centerInside"
+                fresco:placeholderImage="@mipmap/ic_new_friend"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:roundedCornerRadius="15dp" />
+
+
+            <TextView
+                android:id="@+id/tvNewFriendUnread"
+                android:layout_width="15px"
+                android:layout_height="15px"
+                android:layout_alignRight="@id/ivNewFriend"
+                android:layout_alignTop="@id/ivNewFriend"
+                android:layout_marginRight="-8px"
+                android:layout_marginTop="-5px"
+                android:background="@mipmap/bg_unread"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24px"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_margin_left_and_right"
+            android:text="@string/new_friend"
+            android:textColor="@color/black0"
+            android:textSize="35px"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="@dimen/item_margin_left_and_right"
+        android:layout_marginRight="@dimen/item_margin_left_and_right"
+        />
+
+
+
+</LinearLayout>

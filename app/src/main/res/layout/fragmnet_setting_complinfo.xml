@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    android:orientation="vertical">
+    <com.wuhenzhizao.titlebar.widget.CommonTitleBar
+        android:id="@+id/titlebar11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        titlebar:centerText="完善信息"
+        titlebar:centerType="textView"
+        titlebar:leftDrawable="@drawable/comm_titlebar_back_normal"
+        titlebar:leftDrawablePadding="0dp"
+        titlebar:leftText="返回"
+        titlebar:leftType="textView" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/option_item_margin_top"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.lqr.optionitemview.OptionItemView
+            android:id="@+id/change_phone"
+            style="@style/OptionItem"
+            android:background="@drawable/selector_option_item"
+            app:left_text="添加/修改手机号"
+            app:left_text_color="@color/black0"
+            app:left_text_margin_left="@dimen/option_item_margin_left"
+            app:left_text_size="16sp"/>
+
+        <View
+            style="@style/Line"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            />
+
+        <com.lqr.optionitemview.OptionItemView
+            android:id="@+id/change_pwd"
+            style="@style/OptionItem"
+            android:background="@drawable/selector_option_item"
+            app:left_text="添加/修改密码"
+            app:left_text_color="@color/black0"
+            app:left_text_margin_left="@dimen/option_item_margin_left"
+            app:left_text_size="16sp"/>
+
+        <View
+            style="@style/Line"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            />
+
+        <com.lqr.optionitemview.OptionItemView
+            android:id="@+id/change_nickname"
+            style="@style/OptionItem"
+            android:background="@drawable/selector_option_item"
+            app:left_text="修改昵称"
+            app:left_text_color="@color/black0"
+            app:left_text_margin_left="@dimen/option_item_margin_left"
+            app:left_text_size="16sp"/>
+
+        <View
+            style="@style/Line"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            />
+
+        <com.lqr.optionitemview.OptionItemView
+            android:id="@+id/change_persionality"
+            style="@style/OptionItem"
+            android:background="@drawable/selector_option_item"
+            app:left_text="修改个性话语"
+            app:left_text_color="@color/black0"
+            app:left_text_margin_left="@dimen/option_item_margin_left"
+            app:left_text_size="16sp"/>
+
+        <View
+            style="@style/Line"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            />
+
+        <com.lqr.optionitemview.OptionItemView
+            android:id="@+id/change_portrait"
+            style="@style/OptionItem"
+            android:background="@drawable/selector_option_item"
+            app:left_text="修改头像"
+            app:left_text_color="@color/black0"
+            app:left_text_margin_left="@dimen/option_item_margin_left"
+            app:left_text_size="16sp"/>
+
+
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+
+
+
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
